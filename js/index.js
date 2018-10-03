@@ -109,7 +109,7 @@
 	 */
 	function scratchLine(can, x, y, fresh) {
 		var ctx = can.getContext('2d');
-		ctx.lineWidth = 15;
+		ctx.lineWidth = 10;
 		ctx.lineCap = ctx.lineJoin = 'stroke';
 		ctx.strokeStyle = '#f00'; // can be any opaque color
 		if (fresh) {
