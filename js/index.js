@@ -109,7 +109,7 @@
 	 */
 	function scratchLine(can, x, y, fresh) {
 		var ctx = can.getContext('2d');
-		ctx.lineWidth = 10;
+		ctx.lineWidth = 1;
 		ctx.lineCap = ctx.lineJoin = 'stroke';
 		ctx.strokeStyle = '#f00'; // can be any opaque color
 		if (fresh) {
@@ -239,6 +239,8 @@
 	/**
 	 * Handle page load
 	 */
+	document.addEventListener('contextmenu', event => event.preventDefault());
+	
 	window.addEventListener('load', function() {
 		var resetButton = document.getElementById('resetbutton');
 	
